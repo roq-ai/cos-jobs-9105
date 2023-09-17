@@ -1,0 +1,2372 @@
+[
+  {
+    "role": [
+      {
+        "id": "c184dc71-b934-484a-9860-a2db6c6d03a3",
+        "role_name": "Admin",
+        "permissions": "create",
+        "created_at": "2023-09-16T21:27:38.405Z",
+        "updated_at": "2023-09-17T08:57:10.487Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "14f86559-dfa1-4201-a481-172aecc0f504",
+        "role_name": "Manager",
+        "permissions": "read",
+        "created_at": "2023-09-17T10:14:26.473Z",
+        "updated_at": "2023-09-16T22:06:59.062Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b32016c1-de34-4650-8044-79d370bb27a1",
+        "role_name": "Supervisor",
+        "permissions": "update",
+        "created_at": "2023-09-17T16:44:35.735Z",
+        "updated_at": "2023-09-17T03:41:29.269Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "c2bc1bb4-d20e-4a35-a722-de59e6585b2a",
+        "role_name": "Employee",
+        "permissions": "delete",
+        "created_at": "2023-09-16T19:11:24.541Z",
+        "updated_at": "2023-09-17T14:37:44.756Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "0898867a-e499-4095-8f5a-02f3e4ff6603",
+        "role_name": "Guest",
+        "permissions": "approve",
+        "created_at": "2023-09-16T22:50:41.015Z",
+        "updated_at": "2023-09-17T10:31:32.123Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "d666427c-2b1f-45e6-a4a2-21efbce982a9",
+        "permission_name": "Access",
+        "description": "Allows access to the system",
+        "created_at": "2023-09-17T08:55:58.340Z",
+        "updated_at": "2023-09-16T19:59:18.160Z",
+        "role_id": "14f86559-dfa1-4201-a481-172aecc0f504"
+      },
+      {
+        "id": "d55b21d9-ef89-43af-ae72-c3ced683460b",
+        "permission_name": "Edit",
+        "description": "Allows editing of records",
+        "created_at": "2023-09-17T11:55:40.757Z",
+        "updated_at": "2023-09-17T01:56:53.942Z",
+        "role_id": "0898867a-e499-4095-8f5a-02f3e4ff6603"
+      },
+      {
+        "id": "9ec12499-3166-4a42-bd51-e3c43548bfbd",
+        "permission_name": "View",
+        "description": "Allows viewing of information",
+        "created_at": "2023-09-16T18:45:47.436Z",
+        "updated_at": "2023-09-17T08:50:59.803Z",
+        "role_id": "c184dc71-b934-484a-9860-a2db6c6d03a3"
+      },
+      {
+        "id": "faef7b1f-98fb-456b-a389-593f6ad13fa0",
+        "permission_name": "Delete",
+        "description": "Allows deletion of data",
+        "created_at": "2023-09-16T21:17:06.805Z",
+        "updated_at": "2023-09-16T22:42:16.396Z",
+        "role_id": "14f86559-dfa1-4201-a481-172aecc0f504"
+      },
+      {
+        "id": "791648d9-01ba-4dfd-aa74-a0b9e641ec29",
+        "permission_name": "Manage",
+        "description": "Allows management of resources",
+        "created_at": "2023-09-17T13:46:02.691Z",
+        "updated_at": "2023-09-16T18:01:27.375Z",
+        "role_id": "c184dc71-b934-484a-9860-a2db6c6d03a3"
+      }
+    ],
+    "healthcare_staff": [
+      {
+        "id": "fa4c0565-14d7-439b-acd6-eead16fa6eb8",
+        "first_name": "Emily",
+        "last_name": "Johnson",
+        "qualification": "Registered Nurse",
+        "experience": 58397,
+        "status": "Active",
+        "created_at": "2023-09-17T07:58:35.873Z",
+        "updated_at": "2023-09-17T14:07:27.477Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "6ba36ecb-8b91-42d9-a567-40bfb3ca9e31",
+        "first_name": "David",
+        "last_name": "Smith",
+        "qualification": "Doctor",
+        "experience": 34112,
+        "status": "Inactive",
+        "created_at": "2023-09-16T18:18:38.537Z",
+        "updated_at": "2023-09-17T01:49:27.157Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a6b6a2ba-0739-4f95-ac48-8861a4d4f060",
+        "first_name": "Olivia",
+        "last_name": "Brown",
+        "qualification": "Pharmacist",
+        "experience": 8247,
+        "status": "On Leave",
+        "created_at": "2023-09-17T07:13:42.127Z",
+        "updated_at": "2023-09-17T16:29:12.779Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "84361331-4659-467b-99c1-80683cd078f0",
+        "first_name": "Daniel",
+        "last_name": "Wilson",
+        "qualification": "Medical Assistant",
+        "experience": 66368,
+        "status": "Retired",
+        "created_at": "2023-09-16T23:47:52.374Z",
+        "updated_at": "2023-09-17T01:32:44.750Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "35218b55-bd4a-45a3-a9ac-c26f7e17f1b8",
+        "first_name": "Sophia",
+        "last_name": "Davis",
+        "qualification": "Physical Therapist",
+        "experience": 13928,
+        "status": "Suspended",
+        "created_at": "2023-09-17T07:40:39.020Z",
+        "updated_at": "2023-09-17T06:18:45.606Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "document": [
+      {
+        "id": "8e465cb1-77b1-45bc-b6d6-d4f9496fce91",
+        "document_name": "Report",
+        "document_type": "PDF",
+        "upload_date": "2023-09-17T08:32:31.290Z",
+        "created_at": "2023-09-17T03:57:47.967Z",
+        "updated_at": "2023-09-17T16:01:43.629Z",
+        "healthcare_staff_id": "84361331-4659-467b-99c1-80683cd078f0"
+      },
+      {
+        "id": "25647492-8fc3-4edc-8198-f25f36e76ddb",
+        "document_name": "Invoice",
+        "document_type": "Word",
+        "upload_date": "2023-09-17T05:07:45.467Z",
+        "created_at": "2023-09-16T19:37:29.695Z",
+        "updated_at": "2023-09-17T01:32:41.215Z",
+        "healthcare_staff_id": "a6b6a2ba-0739-4f95-ac48-8861a4d4f060"
+      },
+      {
+        "id": "928e87e2-7e57-4050-80c8-87d334e42321",
+        "document_name": "Contract",
+        "document_type": "Excel",
+        "upload_date": "2023-09-17T06:50:21.676Z",
+        "created_at": "2023-09-16T23:25:25.943Z",
+        "updated_at": "2023-09-17T16:41:37.490Z",
+        "healthcare_staff_id": "35218b55-bd4a-45a3-a9ac-c26f7e17f1b8"
+      },
+      {
+        "id": "72ca2d78-8992-468a-9c8c-f88bf28b3adc",
+        "document_name": "Proposal",
+        "document_type": "PowerPoint",
+        "upload_date": "2023-09-17T16:24:36.003Z",
+        "created_at": "2023-09-17T07:21:44.948Z",
+        "updated_at": "2023-09-17T01:14:15.819Z",
+        "healthcare_staff_id": "a6b6a2ba-0739-4f95-ac48-8861a4d4f060"
+      },
+      {
+        "id": "5413c56e-46ff-48ff-b8c1-7768233f71f9",
+        "document_name": "Agreement",
+        "document_type": "HTML",
+        "upload_date": "2023-09-16T20:09:27.017Z",
+        "created_at": "2023-09-17T11:08:00.962Z",
+        "updated_at": "2023-09-16T23:56:52.663Z",
+        "healthcare_staff_id": "fa4c0565-14d7-439b-acd6-eead16fa6eb8"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "86d37244-30d7-4755-9bed-089857cf70a5",
+        "email": "Liliana.Kovacek@gmail.com",
+        "firstName": "Carolanne",
+        "lastName": "Thiel",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4333385",
+        "tenantId": null
+      },
+      {
+        "reference": "70e0eed3-23d8-4b0f-aa04-15be06d74333",
+        "email": "Laverna_Price-Howell72@yahoo.com",
+        "firstName": "Bethel",
+        "lastName": "Rowe",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/726.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "63692046-e2e0-40c0-b026-eb9f2641c148",
+        "email": "Darrell.Weissnat@gmail.com",
+        "firstName": "Laurence",
+        "lastName": "Rodriguez",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/462.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "f31a7bc4-50a3-423b-9300-5e5ff4548d57",
+        "email": "Addison66@yahoo.com",
+        "firstName": "Annamarie",
+        "lastName": "Balistreri",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/52511957",
+        "tenantId": null
+      },
+      {
+        "reference": "ed8f7458-f748-4112-85a0-65883385fe22",
+        "email": "Maida.Rau32@yahoo.com",
+        "firstName": "Twila",
+        "lastName": "Wyman",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/80641689",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "a63718b8-4003-456e-8ea6-29c107612cac",
+        "role_name": "Admin",
+        "permissions": "create",
+        "created_at": "2023-09-17T01:24:59.157Z",
+        "updated_at": "2023-09-17T13:20:45.809Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "1f37d0eb-ecb4-4795-b3cf-01d11ad2fd14",
+        "role_name": "Manager",
+        "permissions": "read",
+        "created_at": "2023-09-16T21:50:44.315Z",
+        "updated_at": "2023-09-16T19:58:22.336Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "6e954730-c801-4afb-9471-fe7b289e8c98",
+        "role_name": "Employee",
+        "permissions": "update",
+        "created_at": "2023-09-17T11:52:25.118Z",
+        "updated_at": "2023-09-17T08:49:58.448Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e3b72d3c-a1f6-4c23-a196-2e0242bbf6ea",
+        "role_name": "Supervisor",
+        "permissions": "delete",
+        "created_at": "2023-09-16T22:35:35.435Z",
+        "updated_at": "2023-09-17T17:25:55.021Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "4d9a22ab-30ae-446f-a2e6-37b6cf873eef",
+        "role_name": "Analyst",
+        "permissions": "approve",
+        "created_at": "2023-09-17T10:25:12.278Z",
+        "updated_at": "2023-09-17T06:05:00.004Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "e97af015-b451-4c66-9ab8-baa7fe071b4c",
+        "permission_name": "Access",
+        "description": "Allows user to access the system",
+        "created_at": "2023-09-17T07:32:06.120Z",
+        "updated_at": "2023-09-17T03:24:09.798Z",
+        "role_id": "a63718b8-4003-456e-8ea6-29c107612cac"
+      },
+      {
+        "id": "97f25cb0-5ba4-434a-b065-22260ef610b7",
+        "permission_name": "Edit",
+        "description": "Enables user to edit data",
+        "created_at": "2023-09-17T02:58:17.029Z",
+        "updated_at": "2023-09-16T22:27:52.117Z",
+        "role_id": "e3b72d3c-a1f6-4c23-a196-2e0242bbf6ea"
+      },
+      {
+        "id": "1ed2bbcf-52db-47f3-8216-1842771b145a",
+        "permission_name": "View",
+        "description": "Allows user to view data",
+        "created_at": "2023-09-17T11:02:32.441Z",
+        "updated_at": "2023-09-16T17:59:18.311Z",
+        "role_id": "4d9a22ab-30ae-446f-a2e6-37b6cf873eef"
+      },
+      {
+        "id": "15cfb888-4408-4e87-a2cc-e85680e9a07a",
+        "permission_name": "Delete",
+        "description": "Enables user to delete data",
+        "created_at": "2023-09-17T13:28:06.285Z",
+        "updated_at": "2023-09-17T14:56:49.220Z",
+        "role_id": "6e954730-c801-4afb-9471-fe7b289e8c98"
+      },
+      {
+        "id": "e695f34c-0f1c-417b-b8e6-cbbf070f5bb7",
+        "permission_name": "Manage",
+        "description": "Allows user to manage settings",
+        "created_at": "2023-09-17T13:27:54.874Z",
+        "updated_at": "2023-09-16T19:50:16.854Z",
+        "role_id": "e3b72d3c-a1f6-4c23-a196-2e0242bbf6ea"
+      }
+    ],
+    "healthcare_staff": [
+      {
+        "id": "aa6b8055-2145-421b-af13-cc7247783f88",
+        "first_name": "Sarah",
+        "last_name": "Johnson",
+        "qualification": "Doctor",
+        "experience": 4006,
+        "status": "Active",
+        "created_at": "2023-09-16T17:47:53.012Z",
+        "updated_at": "2023-09-16T21:36:55.125Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "7cf16e15-206e-42d5-8488-54fc58065fea",
+        "first_name": "David",
+        "last_name": "Brown",
+        "qualification": "Nurse",
+        "experience": 38636,
+        "status": "Inactive",
+        "created_at": "2023-09-17T17:18:17.764Z",
+        "updated_at": "2023-09-17T02:19:22.532Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "f5f26fde-852d-458b-b3c5-bd796aefe874",
+        "first_name": "Jennifer",
+        "last_name": "Smith",
+        "qualification": "Pharmacist",
+        "experience": 44857,
+        "status": "On Leave",
+        "created_at": "2023-09-16T21:34:50.410Z",
+        "updated_at": "2023-09-17T00:54:26.606Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e4e1dad4-9e2f-4ddf-a47c-88937b027b7c",
+        "first_name": "Robert",
+        "last_name": "Davis",
+        "qualification": "Therapist",
+        "experience": 59851,
+        "status": "Retired",
+        "created_at": "2023-09-16T23:09:24.771Z",
+        "updated_at": "2023-09-17T10:55:25.273Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "4d6f8a21-774e-4885-8daf-6867186802d5",
+        "first_name": "Jessica",
+        "last_name": "Wilson",
+        "qualification": "Technician",
+        "experience": 95872,
+        "status": "Suspended",
+        "created_at": "2023-09-16T22:45:03.174Z",
+        "updated_at": "2023-09-17T15:36:18.646Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "document": [
+      {
+        "id": "499a0185-eed0-454a-8195-478a57e4196f",
+        "document_name": "Contract",
+        "document_type": "Legal",
+        "upload_date": "2023-09-17T12:27:34.204Z",
+        "created_at": "2023-09-17T04:23:09.124Z",
+        "updated_at": "2023-09-17T10:45:17.634Z",
+        "healthcare_staff_id": "f5f26fde-852d-458b-b3c5-bd796aefe874"
+      },
+      {
+        "id": "2d6f6591-d9f2-4239-b0c9-dbc77b28ba53",
+        "document_name": "Invoice",
+        "document_type": "Financial",
+        "upload_date": "2023-09-16T23:50:21.681Z",
+        "created_at": "2023-09-16T21:35:42.821Z",
+        "updated_at": "2023-09-16T22:21:58.220Z",
+        "healthcare_staff_id": "f5f26fde-852d-458b-b3c5-bd796aefe874"
+      },
+      {
+        "id": "f097ac69-23f4-4b06-9099-c5df777aa633",
+        "document_name": "Report",
+        "document_type": "Technical",
+        "upload_date": "2023-09-16T18:19:27.006Z",
+        "created_at": "2023-09-17T02:44:35.313Z",
+        "updated_at": "2023-09-17T16:02:58.082Z",
+        "healthcare_staff_id": "aa6b8055-2145-421b-af13-cc7247783f88"
+      },
+      {
+        "id": "c6ab2ff4-f623-47f8-a4c5-29054b747807",
+        "document_name": "Proposal",
+        "document_type": "Business",
+        "upload_date": "2023-09-17T16:43:37.142Z",
+        "created_at": "2023-09-17T05:02:14.314Z",
+        "updated_at": "2023-09-17T07:01:27.436Z",
+        "healthcare_staff_id": "e4e1dad4-9e2f-4ddf-a47c-88937b027b7c"
+      },
+      {
+        "id": "da996934-2e82-4963-8433-87e69da92925",
+        "document_name": "Agreement",
+        "document_type": "Marketing",
+        "upload_date": "2023-09-16T22:23:19.812Z",
+        "created_at": "2023-09-17T00:23:20.546Z",
+        "updated_at": "2023-09-17T14:55:11.252Z",
+        "healthcare_staff_id": "4d6f8a21-774e-4885-8daf-6867186802d5"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "ad63b791-1d07-4a7a-be13-0c9af693460c",
+        "email": "Grace82@hotmail.com",
+        "firstName": "Mitchell",
+        "lastName": "Conroy",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/32703059",
+        "tenantId": null
+      },
+      {
+        "reference": "b36bf03e-dcd6-48cb-b954-e505ee0cc9ed",
+        "email": "Amber64@hotmail.com",
+        "firstName": "Ivah",
+        "lastName": "Stracke",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/975.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "375c4595-6202-47bc-ae24-cc4244dcb0fd",
+        "email": "Efren.Wyman78@yahoo.com",
+        "firstName": "Bernice",
+        "lastName": "Cormier",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/971.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "1d658c83-c662-418a-a123-b2d2be711f70",
+        "email": "Darby6@yahoo.com",
+        "firstName": "Edward",
+        "lastName": "Shields",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/97761309",
+        "tenantId": null
+      },
+      {
+        "reference": "97417795-8967-420e-8ca6-f3c63d986030",
+        "email": "Alejandra31@gmail.com",
+        "firstName": "Lilla",
+        "lastName": "Corwin",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/636.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "d8aaf572-fd6e-4f4c-8375-eeb85cec5e2b",
+        "role_name": "Admin",
+        "permissions": "create",
+        "created_at": "2023-09-17T09:02:23.062Z",
+        "updated_at": "2023-09-17T10:22:49.804Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "089459de-216e-4be4-a94e-1cc6ecdcf86f",
+        "role_name": "Manager",
+        "permissions": "read",
+        "created_at": "2023-09-17T00:38:28.229Z",
+        "updated_at": "2023-09-17T00:44:50.306Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "da7f6763-63c2-4652-8ab5-09260b694fef",
+        "role_name": "Supervisor",
+        "permissions": "update",
+        "created_at": "2023-09-17T13:24:44.900Z",
+        "updated_at": "2023-09-17T14:44:39.189Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "81f38ebe-3919-4c83-b74c-f3ba36daa857",
+        "role_name": "Employee",
+        "permissions": "delete",
+        "created_at": "2023-09-17T14:41:06.829Z",
+        "updated_at": "2023-09-16T21:51:38.040Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "37450da0-ef09-43df-b3ab-9f3dc63e3caf",
+        "role_name": "Guest",
+        "permissions": "manage",
+        "created_at": "2023-09-17T01:53:56.390Z",
+        "updated_at": "2023-09-16T22:05:19.004Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "e14f42cd-7cfa-41ca-93d5-3437a5cf286e",
+        "permission_name": "Access",
+        "description": "Allows access to the system",
+        "created_at": "2023-09-17T11:51:29.159Z",
+        "updated_at": "2023-09-16T20:21:27.963Z",
+        "role_id": "37450da0-ef09-43df-b3ab-9f3dc63e3caf"
+      },
+      {
+        "id": "f2de4f91-3f86-482a-aa3e-2d390de9755a",
+        "permission_name": "Modify",
+        "description": "Allows modification of data",
+        "created_at": "2023-09-17T05:48:24.898Z",
+        "updated_at": "2023-09-17T16:38:41.822Z",
+        "role_id": "089459de-216e-4be4-a94e-1cc6ecdcf86f"
+      },
+      {
+        "id": "f937ea70-8670-4827-b681-a238373d4798",
+        "permission_name": "Delete",
+        "description": "Allows deletion of records",
+        "created_at": "2023-09-17T01:18:08.481Z",
+        "updated_at": "2023-09-16T22:06:12.273Z",
+        "role_id": "da7f6763-63c2-4652-8ab5-09260b694fef"
+      },
+      {
+        "id": "ddce982e-b455-48f0-9a0d-dcd128ca395b",
+        "permission_name": "Manage",
+        "description": "Allows management of resources",
+        "created_at": "2023-09-17T14:52:49.531Z",
+        "updated_at": "2023-09-16T20:28:58.364Z",
+        "role_id": "d8aaf572-fd6e-4f4c-8375-eeb85cec5e2b"
+      },
+      {
+        "id": "164393f5-f628-4c5e-bef8-ecbde5587a02",
+        "permission_name": "Execute",
+        "description": "Allows execution of actions",
+        "created_at": "2023-09-17T14:59:03.632Z",
+        "updated_at": "2023-09-16T21:18:00.434Z",
+        "role_id": "089459de-216e-4be4-a94e-1cc6ecdcf86f"
+      }
+    ],
+    "healthcare_staff": [
+      {
+        "id": "d4459460-c001-4144-8354-b06ed718ccf2",
+        "first_name": "Sarah",
+        "last_name": "Johnson",
+        "qualification": "Doctor",
+        "experience": 83482,
+        "status": "Active",
+        "created_at": "2023-09-17T15:38:51.196Z",
+        "updated_at": "2023-09-17T04:53:48.580Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "8090495c-b6c1-477c-ac2d-e39e39913e5a",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "qualification": "Nurse",
+        "experience": 23251,
+        "status": "Inactive",
+        "created_at": "2023-09-17T13:45:58.162Z",
+        "updated_at": "2023-09-17T12:57:06.801Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "9645719b-d7fe-45ca-9e33-067416aff1b3",
+        "first_name": "Emily",
+        "last_name": "Smith",
+        "qualification": "Pharmacist",
+        "experience": 82432,
+        "status": "On Leave",
+        "created_at": "2023-09-17T00:30:16.301Z",
+        "updated_at": "2023-09-17T00:30:49.579Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "80a6e1ac-e0f4-4aad-8d5c-cadab29f7cdd",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "qualification": "Therapist",
+        "experience": 37862,
+        "status": "Retired",
+        "created_at": "2023-09-16T19:44:48.704Z",
+        "updated_at": "2023-09-17T13:24:35.579Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "19ebe41c-67de-497f-ac90-27db7323635f",
+        "first_name": "Jennifer",
+        "last_name": "Davis",
+        "qualification": "Technician",
+        "experience": 73459,
+        "status": "Suspended",
+        "created_at": "2023-09-17T02:04:25.444Z",
+        "updated_at": "2023-09-17T05:09:45.505Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "document": [
+      {
+        "id": "ec10c660-dc98-49bf-8c4d-f736c5dcedc1",
+        "document_name": "Contract",
+        "document_type": "Legal",
+        "upload_date": "2023-09-17T14:46:00.411Z",
+        "created_at": "2023-09-17T09:53:06.183Z",
+        "updated_at": "2023-09-17T08:06:05.454Z",
+        "healthcare_staff_id": "9645719b-d7fe-45ca-9e33-067416aff1b3"
+      },
+      {
+        "id": "7f3a41fb-3b16-4a53-ae41-8ea083cfd5c6",
+        "document_name": "Report",
+        "document_type": "Financial",
+        "upload_date": "2023-09-17T14:48:22.468Z",
+        "created_at": "2023-09-17T04:21:38.411Z",
+        "updated_at": "2023-09-17T07:25:06.279Z",
+        "healthcare_staff_id": "80a6e1ac-e0f4-4aad-8d5c-cadab29f7cdd"
+      },
+      {
+        "id": "f0f3ba35-1e6e-465a-b500-6cd68be0e229",
+        "document_name": "Invoice",
+        "document_type": "Technical",
+        "upload_date": "2023-09-17T07:45:36.844Z",
+        "created_at": "2023-09-16T18:56:07.886Z",
+        "updated_at": "2023-09-16T23:10:06.816Z",
+        "healthcare_staff_id": "80a6e1ac-e0f4-4aad-8d5c-cadab29f7cdd"
+      },
+      {
+        "id": "4bdfc023-9a5e-4d19-bd01-fc62262e76c4",
+        "document_name": "Proposal",
+        "document_type": "Marketing",
+        "upload_date": "2023-09-17T01:02:33.684Z",
+        "created_at": "2023-09-16T18:34:00.325Z",
+        "updated_at": "2023-09-16T19:01:26.704Z",
+        "healthcare_staff_id": "19ebe41c-67de-497f-ac90-27db7323635f"
+      },
+      {
+        "id": "48fe24af-de43-4ef7-857d-2665d4671099",
+        "document_name": "Agreement",
+        "document_type": "Operational",
+        "upload_date": "2023-09-17T17:18:55.960Z",
+        "created_at": "2023-09-17T11:12:36.705Z",
+        "updated_at": "2023-09-17T14:10:55.826Z",
+        "healthcare_staff_id": "d4459460-c001-4144-8354-b06ed718ccf2"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "2159db56-dd3f-49cc-b795-c5d0fa1d2a3d",
+        "email": "Virgil82@hotmail.com",
+        "firstName": "Agustin",
+        "lastName": "Stanton",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/10149151",
+        "tenantId": null
+      },
+      {
+        "reference": "64e224ed-9235-4b6f-a114-9eccac15edbf",
+        "email": "Eulalia.Windler24@gmail.com",
+        "firstName": "Everett",
+        "lastName": "Greenfelder",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/58432157",
+        "tenantId": null
+      },
+      {
+        "reference": "5860db81-521d-4b76-b034-8fab2de3752f",
+        "email": "Vanessa.Armstrong@hotmail.com",
+        "firstName": "Elisa",
+        "lastName": "Senger",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/7160009",
+        "tenantId": null
+      },
+      {
+        "reference": "192dc9d0-00e2-4f74-9fbb-842e526759d8",
+        "email": "Ila5@yahoo.com",
+        "firstName": "Granville",
+        "lastName": "Wolff",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/283.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "7bb74895-8366-4522-9c05-b46f20e340da",
+        "email": "Ken_Hayes91@hotmail.com",
+        "firstName": "Ayla",
+        "lastName": "Frami",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/49142181",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "b473e4a4-8e65-4f4b-8c64-afe85a440b61",
+        "role_name": "Admin",
+        "permissions": "create",
+        "created_at": "2023-09-17T15:37:49.182Z",
+        "updated_at": "2023-09-17T03:10:02.690Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "3aca4cc6-2a2e-40f7-919e-f6f1f2384346",
+        "role_name": "Manager",
+        "permissions": "read",
+        "created_at": "2023-09-17T04:08:55.645Z",
+        "updated_at": "2023-09-16T21:03:56.226Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "4b7baba8-7267-47b2-9b02-dc7280927619",
+        "role_name": "Supervisor",
+        "permissions": "update",
+        "created_at": "2023-09-17T14:52:37.365Z",
+        "updated_at": "2023-09-17T00:17:37.773Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "86c771bb-cd14-4793-83c5-d65ca1217b13",
+        "role_name": "Employee",
+        "permissions": "delete",
+        "created_at": "2023-09-16T23:39:40.252Z",
+        "updated_at": "2023-09-16T23:15:38.183Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b084873b-950b-445b-8451-53f3c6f6652c",
+        "role_name": "Guest",
+        "permissions": "approve",
+        "created_at": "2023-09-17T01:25:04.534Z",
+        "updated_at": "2023-09-16T22:04:11.403Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "abf51ba7-3aeb-4b21-9431-8e12ee9943a1",
+        "permission_name": "Access",
+        "description": "Allows access to the system",
+        "created_at": "2023-09-17T07:43:16.474Z",
+        "updated_at": "2023-09-17T16:36:07.303Z",
+        "role_id": "b473e4a4-8e65-4f4b-8c64-afe85a440b61"
+      },
+      {
+        "id": "7576877a-3175-448e-b08e-e8d106790d82",
+        "permission_name": "Modify",
+        "description": "Allows modification of data",
+        "created_at": "2023-09-17T05:52:07.001Z",
+        "updated_at": "2023-09-16T18:44:01.303Z",
+        "role_id": "86c771bb-cd14-4793-83c5-d65ca1217b13"
+      },
+      {
+        "id": "e22cac78-3bbe-4a8c-93d4-459a2b19f9c6",
+        "permission_name": "View",
+        "description": "Allows viewing of data",
+        "created_at": "2023-09-16T18:28:17.114Z",
+        "updated_at": "2023-09-16T18:32:59.300Z",
+        "role_id": "86c771bb-cd14-4793-83c5-d65ca1217b13"
+      },
+      {
+        "id": "052a1922-7265-496c-9415-f2e3d3fe35ac",
+        "permission_name": "Delete",
+        "description": "Allows deletion of data",
+        "created_at": "2023-09-17T07:37:36.630Z",
+        "updated_at": "2023-09-17T11:52:07.140Z",
+        "role_id": "b473e4a4-8e65-4f4b-8c64-afe85a440b61"
+      },
+      {
+        "id": "848cff3c-b81f-41e3-9f5c-6d89cd215d70",
+        "permission_name": "Approve",
+        "description": "Allows approval of requests",
+        "created_at": "2023-09-16T20:53:19.289Z",
+        "updated_at": "2023-09-17T01:02:32.744Z",
+        "role_id": "86c771bb-cd14-4793-83c5-d65ca1217b13"
+      }
+    ],
+    "healthcare_staff": [
+      {
+        "id": "cd4aecd0-d7a0-48e0-aade-7aa2b21682c6",
+        "first_name": "Emily",
+        "last_name": "Johnson",
+        "qualification": "Doctor",
+        "experience": 47602,
+        "status": "Active",
+        "created_at": "2023-09-16T18:48:30.943Z",
+        "updated_at": "2023-09-17T14:32:25.387Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "0f663e7c-2d59-4cd4-b852-7e001a8062a3",
+        "first_name": "Daniel",
+        "last_name": "Anderson",
+        "qualification": "Nurse",
+        "experience": 18941,
+        "status": "Inactive",
+        "created_at": "2023-09-17T01:13:23.806Z",
+        "updated_at": "2023-09-17T17:11:01.770Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "69e4551b-55cb-4ff1-9668-58d69eae4e40",
+        "first_name": "Olivia",
+        "last_name": "Williams",
+        "qualification": "Surgeon",
+        "experience": 53376,
+        "status": "On Leave",
+        "created_at": "2023-09-16T23:17:47.174Z",
+        "updated_at": "2023-09-17T00:37:41.036Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "94014674-352f-4041-9dac-2d58647765fd",
+        "first_name": "James",
+        "last_name": "Brown",
+        "qualification": "Therapist",
+        "experience": 60287,
+        "status": "Retired",
+        "created_at": "2023-09-17T01:39:05.427Z",
+        "updated_at": "2023-09-17T05:40:20.636Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "d0f6603a-eae3-4bdc-a832-b22c741b5b26",
+        "first_name": "Sophia",
+        "last_name": "Jones",
+        "qualification": "Pharmacist",
+        "experience": 79766,
+        "status": "Suspended",
+        "created_at": "2023-09-17T03:46:49.139Z",
+        "updated_at": "2023-09-17T03:42:58.450Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "document": [
+      {
+        "id": "4ffbc517-ec97-4aa0-aa3c-77df227b0005",
+        "document_name": "Contract",
+        "document_type": "Legal",
+        "upload_date": "2023-09-17T16:49:04.139Z",
+        "created_at": "2023-09-17T14:13:42.806Z",
+        "updated_at": "2023-09-17T01:07:41.847Z",
+        "healthcare_staff_id": "69e4551b-55cb-4ff1-9668-58d69eae4e40"
+      },
+      {
+        "id": "bd83d780-4383-42a7-82f3-7b03be8cdf0d",
+        "document_name": "Report",
+        "document_type": "Financial",
+        "upload_date": "2023-09-17T03:29:28.851Z",
+        "created_at": "2023-09-17T04:47:06.741Z",
+        "updated_at": "2023-09-17T07:54:05.786Z",
+        "healthcare_staff_id": "d0f6603a-eae3-4bdc-a832-b22c741b5b26"
+      },
+      {
+        "id": "58bb4ae5-1218-4011-9c94-89eb95fb7db7",
+        "document_name": "Invoice",
+        "document_type": "Medical",
+        "upload_date": "2023-09-16T18:04:22.723Z",
+        "created_at": "2023-09-17T07:13:53.442Z",
+        "updated_at": "2023-09-16T18:50:50.787Z",
+        "healthcare_staff_id": "cd4aecd0-d7a0-48e0-aade-7aa2b21682c6"
+      },
+      {
+        "id": "493a8410-76f6-44a0-a94a-e047b0446e4e",
+        "document_name": "Proposal",
+        "document_type": "Technical",
+        "upload_date": "2023-09-16T22:16:56.002Z",
+        "created_at": "2023-09-16T19:11:09.596Z",
+        "updated_at": "2023-09-17T13:05:56.161Z",
+        "healthcare_staff_id": "94014674-352f-4041-9dac-2d58647765fd"
+      },
+      {
+        "id": "61377aa2-80d6-41f6-b503-36cae9179931",
+        "document_name": "Agreement",
+        "document_type": "Business",
+        "upload_date": "2023-09-17T07:45:11.618Z",
+        "created_at": "2023-09-17T13:25:41.214Z",
+        "updated_at": "2023-09-16T23:51:50.524Z",
+        "healthcare_staff_id": "d0f6603a-eae3-4bdc-a832-b22c741b5b26"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "6a276c00-473a-4cfa-bf88-b52aad3a568b",
+        "email": "Christop.McKenzie14@gmail.com",
+        "firstName": "Harley",
+        "lastName": "Krajcik",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/61293546",
+        "tenantId": null
+      },
+      {
+        "reference": "86138dec-2e2c-4e93-88c0-fce17e4616d6",
+        "email": "Maryse_King-Kirlin11@gmail.com",
+        "firstName": "Ulices",
+        "lastName": "Okuneva",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/45.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "7292423c-3844-4612-a3fc-824a748534fc",
+        "email": "Angela93@gmail.com",
+        "firstName": "Anabelle",
+        "lastName": "Littel",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/72234516",
+        "tenantId": null
+      },
+      {
+        "reference": "d9e91b0b-6c43-4788-a97d-599ca757bb7e",
+        "email": "Brandon.Ritchie@gmail.com",
+        "firstName": "Cali",
+        "lastName": "Auer",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/78859436",
+        "tenantId": null
+      },
+      {
+        "reference": "3314231b-1c0a-4ea3-9a72-01d5bb07ccfd",
+        "email": "Jaydon.Boehm72@hotmail.com",
+        "firstName": "Hank",
+        "lastName": "Cremin",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/966.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "a4c3bd53-910a-4d19-aeab-fda9dff6bb50",
+        "role_name": "Admin",
+        "permissions": "Create",
+        "created_at": "2023-09-16T21:35:19.921Z",
+        "updated_at": "2023-09-16T18:46:19.969Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e0fcd62b-cb27-4b65-b5e9-8c45bc83d0f9",
+        "role_name": "Manager",
+        "permissions": "Read",
+        "created_at": "2023-09-17T02:18:08.407Z",
+        "updated_at": "2023-09-17T02:52:56.240Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "5ce64f1d-ed19-45fc-bf1c-16bb0cd529f3",
+        "role_name": "Supervisor",
+        "permissions": "Update",
+        "created_at": "2023-09-17T14:03:32.682Z",
+        "updated_at": "2023-09-17T16:40:59.258Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "621a4fd8-fc31-48e7-a761-dca9f4b42905",
+        "role_name": "Employee",
+        "permissions": "Delete",
+        "created_at": "2023-09-17T02:17:22.017Z",
+        "updated_at": "2023-09-17T15:33:10.474Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a3b777d2-8eb3-49a4-a74f-40a435b41ebc",
+        "role_name": "Guest",
+        "permissions": "Manage",
+        "created_at": "2023-09-17T16:28:36.623Z",
+        "updated_at": "2023-09-17T15:10:50.922Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "1a32ab95-e90b-4c0e-acf5-ec80795fec68",
+        "permission_name": "Access",
+        "description": "Allows access to the system",
+        "created_at": "2023-09-17T06:04:40.616Z",
+        "updated_at": "2023-09-17T09:30:47.185Z",
+        "role_id": "a4c3bd53-910a-4d19-aeab-fda9dff6bb50"
+      },
+      {
+        "id": "3271d209-546c-46ed-9332-74629e61440e",
+        "permission_name": "Edit",
+        "description": "Enables editing functionality",
+        "created_at": "2023-09-16T20:13:57.659Z",
+        "updated_at": "2023-09-16T19:07:41.472Z",
+        "role_id": "621a4fd8-fc31-48e7-a761-dca9f4b42905"
+      },
+      {
+        "id": "7018372b-9d44-4062-843f-d7c407d7f5e8",
+        "permission_name": "View",
+        "description": "Provides view-only access",
+        "created_at": "2023-09-16T21:48:32.710Z",
+        "updated_at": "2023-09-17T03:22:44.792Z",
+        "role_id": "621a4fd8-fc31-48e7-a761-dca9f4b42905"
+      },
+      {
+        "id": "844209b9-7b2a-4ca6-9650-6791f1138964",
+        "permission_name": "Delete",
+        "description": "Allows deletion of records",
+        "created_at": "2023-09-17T01:13:27.468Z",
+        "updated_at": "2023-09-17T08:16:23.364Z",
+        "role_id": "a4c3bd53-910a-4d19-aeab-fda9dff6bb50"
+      },
+      {
+        "id": "92868f25-511b-4bf0-865b-831feba6b802",
+        "permission_name": "Manage",
+        "description": "Enables management of system settings",
+        "created_at": "2023-09-17T02:08:15.328Z",
+        "updated_at": "2023-09-16T20:06:02.195Z",
+        "role_id": "a3b777d2-8eb3-49a4-a74f-40a435b41ebc"
+      }
+    ],
+    "healthcare_staff": [
+      {
+        "id": "372214b6-ad03-4c77-8551-08fa508ecb13",
+        "first_name": "Emily",
+        "last_name": "Smith",
+        "qualification": "Registered Nurse",
+        "experience": 96835,
+        "status": "Active",
+        "created_at": "2023-09-16T19:46:17.145Z",
+        "updated_at": "2023-09-17T03:56:58.543Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "9ea09132-cc4e-4082-8c90-5fbbea0f07a9",
+        "first_name": "Daniel",
+        "last_name": "Johnson",
+        "qualification": "Physician",
+        "experience": 49070,
+        "status": "Inactive",
+        "created_at": "2023-09-17T03:15:55.108Z",
+        "updated_at": "2023-09-17T03:38:53.733Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "c4941560-4ba7-4fcf-9210-ad9a08406564",
+        "first_name": "Olivia",
+        "last_name": "Brown",
+        "qualification": "Medical Assistant",
+        "experience": 96146,
+        "status": "On Leave",
+        "created_at": "2023-09-16T18:29:10.546Z",
+        "updated_at": "2023-09-17T17:21:11.627Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "34b744cc-3623-44dd-ac43-5250be864029",
+        "first_name": "James",
+        "last_name": "Wilson",
+        "qualification": "Pharmacist",
+        "experience": 79597,
+        "status": "Retired",
+        "created_at": "2023-09-17T13:41:25.123Z",
+        "updated_at": "2023-09-17T00:46:56.985Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "2d4b79cc-47c4-4003-9690-a6870ec2dd59",
+        "first_name": "Sophia",
+        "last_name": "Taylor",
+        "qualification": "Physical Therapist",
+        "experience": 452,
+        "status": "Suspended",
+        "created_at": "2023-09-17T08:42:51.260Z",
+        "updated_at": "2023-09-16T17:42:09.102Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "document": [
+      {
+        "id": "15adb9b2-94d2-4da8-93c0-f54a413c7fe9",
+        "document_name": "Contract",
+        "document_type": "Legal",
+        "upload_date": "2023-09-17T12:10:40.901Z",
+        "created_at": "2023-09-17T16:07:24.163Z",
+        "updated_at": "2023-09-17T03:44:20.137Z",
+        "healthcare_staff_id": "372214b6-ad03-4c77-8551-08fa508ecb13"
+      },
+      {
+        "id": "350a09e0-619c-4aef-ae7e-ebb126405358",
+        "document_name": "Invoice",
+        "document_type": "Financial",
+        "upload_date": "2023-09-16T20:27:44.366Z",
+        "created_at": "2023-09-17T07:48:32.338Z",
+        "updated_at": "2023-09-17T03:01:40.504Z",
+        "healthcare_staff_id": "9ea09132-cc4e-4082-8c90-5fbbea0f07a9"
+      },
+      {
+        "id": "a5cb0d24-b714-4812-ad25-cdbe0d978703",
+        "document_name": "Report",
+        "document_type": "Technical",
+        "upload_date": "2023-09-17T11:15:13.710Z",
+        "created_at": "2023-09-16T19:04:04.902Z",
+        "updated_at": "2023-09-17T05:21:56.307Z",
+        "healthcare_staff_id": "2d4b79cc-47c4-4003-9690-a6870ec2dd59"
+      },
+      {
+        "id": "a79c36eb-8e7e-45ed-bf47-f600f423f9d2",
+        "document_name": "Proposal",
+        "document_type": "Business",
+        "upload_date": "2023-09-16T18:00:56.084Z",
+        "created_at": "2023-09-16T18:17:08.153Z",
+        "updated_at": "2023-09-17T16:46:21.987Z",
+        "healthcare_staff_id": "9ea09132-cc4e-4082-8c90-5fbbea0f07a9"
+      },
+      {
+        "id": "edcfb606-ca36-4a6c-8087-894da5c80b8c",
+        "document_name": "Agreement",
+        "document_type": "Confidential",
+        "upload_date": "2023-09-16T20:04:55.640Z",
+        "created_at": "2023-09-16T17:55:49.344Z",
+        "updated_at": "2023-09-17T08:59:57.135Z",
+        "healthcare_staff_id": "34b744cc-3623-44dd-ac43-5250be864029"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "171499a0-0411-4b38-bc08-25191b27d816",
+        "email": "Philip67@gmail.com",
+        "firstName": "Malcolm",
+        "lastName": "Gerlach",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/661.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "91e79b96-b695-4802-b088-8cf0765e046a",
+        "email": "Dell_Larkin69@yahoo.com",
+        "firstName": "D'angelo",
+        "lastName": "Gulgowski",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/78289165",
+        "tenantId": null
+      },
+      {
+        "reference": "d116bd15-130a-438e-b5a0-be4e72546f18",
+        "email": "Alexzander78@gmail.com",
+        "firstName": "Valentina",
+        "lastName": "Hintz",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/95922151",
+        "tenantId": null
+      },
+      {
+        "reference": "0518fbcb-3724-400e-b9b7-6e8946d68026",
+        "email": "Watson.Bernhard82@yahoo.com",
+        "firstName": "Fred",
+        "lastName": "McKenzie",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/29230527",
+        "tenantId": null
+      },
+      {
+        "reference": "027e95f4-4f07-4e6d-9e18-2d72f426370c",
+        "email": "Dillon_Dooley@gmail.com",
+        "firstName": "Adolphus",
+        "lastName": "Gislason",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/421.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "bbb24f62-b66f-43ea-b279-ff5de6ae2703",
+        "role_name": "Admin",
+        "permissions": "create",
+        "created_at": "2023-09-16T17:49:21.953Z",
+        "updated_at": "2023-09-17T11:40:01.480Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "060305cc-687e-48ec-973f-5557b6a3b9ac",
+        "role_name": "Manager",
+        "permissions": "read",
+        "created_at": "2023-09-17T01:22:33.620Z",
+        "updated_at": "2023-09-16T18:31:03.383Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "7bb71dd1-7c98-4a29-9215-cb0c183a650c",
+        "role_name": "Supervisor",
+        "permissions": "update",
+        "created_at": "2023-09-17T03:12:34.420Z",
+        "updated_at": "2023-09-17T07:35:20.126Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "7120aa38-bf76-4206-97a6-f2c4b4001a8d",
+        "role_name": "Employee",
+        "permissions": "delete",
+        "created_at": "2023-09-17T00:09:42.244Z",
+        "updated_at": "2023-09-17T13:17:41.717Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "4f98843f-21b6-48a1-8b18-6f53ae9d224f",
+        "role_name": "Guest",
+        "permissions": "approve",
+        "created_at": "2023-09-17T01:36:51.567Z",
+        "updated_at": "2023-09-17T04:29:21.907Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "79bccc0d-fe5f-435e-9800-84032042e496",
+        "permission_name": "Access",
+        "description": "Allows access to the system",
+        "created_at": "2023-09-17T01:37:26.476Z",
+        "updated_at": "2023-09-17T03:07:16.100Z",
+        "role_id": "7bb71dd1-7c98-4a29-9215-cb0c183a650c"
+      },
+      {
+        "id": "698189eb-1619-4234-bd36-4e89c9331534",
+        "permission_name": "Edit",
+        "description": "Enables editing functionality",
+        "created_at": "2023-09-17T05:59:45.127Z",
+        "updated_at": "2023-09-17T10:58:41.671Z",
+        "role_id": "bbb24f62-b66f-43ea-b279-ff5de6ae2703"
+      },
+      {
+        "id": "fcc482b4-b285-465c-b06a-4e59411658ad",
+        "permission_name": "View",
+        "description": "Provides view-only access",
+        "created_at": "2023-09-17T12:39:16.153Z",
+        "updated_at": "2023-09-17T15:39:21.144Z",
+        "role_id": "7bb71dd1-7c98-4a29-9215-cb0c183a650c"
+      },
+      {
+        "id": "62594c8f-8832-480b-9d9f-c7a7caaaf4e6",
+        "permission_name": "Delete",
+        "description": "Allows deletion of records",
+        "created_at": "2023-09-17T10:11:58.315Z",
+        "updated_at": "2023-09-16T18:52:37.621Z",
+        "role_id": "7bb71dd1-7c98-4a29-9215-cb0c183a650c"
+      },
+      {
+        "id": "2ff8b66b-171f-4420-95ed-c1b6b0e7c46b",
+        "permission_name": "Manage",
+        "description": "Enables management of resources",
+        "created_at": "2023-09-17T01:58:29.818Z",
+        "updated_at": "2023-09-17T03:35:42.306Z",
+        "role_id": "7bb71dd1-7c98-4a29-9215-cb0c183a650c"
+      }
+    ],
+    "healthcare_staff": [
+      {
+        "id": "aec3560b-aed5-44a7-ae32-083c43ec0b4c",
+        "first_name": "Sarah",
+        "last_name": "Johnson",
+        "qualification": "Doctor",
+        "experience": 26218,
+        "status": "Active",
+        "created_at": "2023-09-17T05:50:10.546Z",
+        "updated_at": "2023-09-16T21:26:58.406Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "3409ab37-28f8-4094-83d0-b5c9688b673a",
+        "first_name": "Michael",
+        "last_name": "Brown",
+        "qualification": "Nurse",
+        "experience": 17824,
+        "status": "Inactive",
+        "created_at": "2023-09-17T16:07:19.132Z",
+        "updated_at": "2023-09-17T15:53:54.659Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "737e162f-a8c7-4522-8e00-ce5cad29966a",
+        "first_name": "Emily",
+        "last_name": "Smith",
+        "qualification": "Pharmacist",
+        "experience": 83269,
+        "status": "On Leave",
+        "created_at": "2023-09-17T16:57:12.185Z",
+        "updated_at": "2023-09-16T17:57:45.894Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "f278dc3b-34a8-4f5f-970a-ea1961e6286c",
+        "first_name": "David",
+        "last_name": "Wilson",
+        "qualification": "Therapist",
+        "experience": 24549,
+        "status": "Retired",
+        "created_at": "2023-09-16T21:56:01.418Z",
+        "updated_at": "2023-09-17T15:55:39.431Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "1db49f65-ae46-4d19-9eb8-24467b220f5a",
+        "first_name": "Jennifer",
+        "last_name": "Davis",
+        "qualification": "Surgeon",
+        "experience": 6268,
+        "status": "Suspended",
+        "created_at": "2023-09-16T21:50:12.191Z",
+        "updated_at": "2023-09-17T15:45:21.703Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "document": [
+      {
+        "id": "91abcb9c-f3e6-4c16-9360-6f58fca35be4",
+        "document_name": "Contract",
+        "document_type": "Legal",
+        "upload_date": "2023-09-17T13:04:24.819Z",
+        "created_at": "2023-09-16T19:38:48.359Z",
+        "updated_at": "2023-09-17T01:27:35.583Z",
+        "healthcare_staff_id": "1db49f65-ae46-4d19-9eb8-24467b220f5a"
+      },
+      {
+        "id": "304c5370-8164-48ad-87d0-f336b2811469",
+        "document_name": "Agreement",
+        "document_type": "Financial",
+        "upload_date": "2023-09-17T09:04:27.753Z",
+        "created_at": "2023-09-17T06:28:25.169Z",
+        "updated_at": "2023-09-17T13:26:06.531Z",
+        "healthcare_staff_id": "3409ab37-28f8-4094-83d0-b5c9688b673a"
+      },
+      {
+        "id": "dd01b859-805d-4bc1-a8cf-ce344424ec2d",
+        "document_name": "Report",
+        "document_type": "Technical",
+        "upload_date": "2023-09-17T03:34:38.186Z",
+        "created_at": "2023-09-17T01:57:45.844Z",
+        "updated_at": "2023-09-16T18:45:57.282Z",
+        "healthcare_staff_id": "737e162f-a8c7-4522-8e00-ce5cad29966a"
+      },
+      {
+        "id": "1ca196ab-52fc-4e4c-87bb-ab5637fdfb80",
+        "document_name": "Proposal",
+        "document_type": "Business",
+        "upload_date": "2023-09-17T02:45:01.520Z",
+        "created_at": "2023-09-17T04:22:51.662Z",
+        "updated_at": "2023-09-16T18:48:25.807Z",
+        "healthcare_staff_id": "1db49f65-ae46-4d19-9eb8-24467b220f5a"
+      },
+      {
+        "id": "7ef5f8bc-5c2e-4b38-b8a7-a8c83ddabef5",
+        "document_name": "Invoice",
+        "document_type": "Marketing",
+        "upload_date": "2023-09-17T07:28:11.166Z",
+        "created_at": "2023-09-17T07:23:41.107Z",
+        "updated_at": "2023-09-17T15:14:51.113Z",
+        "healthcare_staff_id": "f278dc3b-34a8-4f5f-970a-ea1961e6286c"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "0a3db3e9-6c9b-413d-94c2-b6eac0bda31e",
+        "email": "Llewellyn5@hotmail.com",
+        "firstName": "Florence",
+        "lastName": "Heidenreich",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/526.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "f0bb1e95-3bab-4982-8280-09a840027312",
+        "email": "Velda.Marks43@gmail.com",
+        "firstName": "Fabian",
+        "lastName": "Kulas",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/61888239",
+        "tenantId": null
+      },
+      {
+        "reference": "0388d3bc-ff2a-46e2-8dd7-c9840c4a7c1d",
+        "email": "Abdullah_Willms63@hotmail.com",
+        "firstName": "Uriel",
+        "lastName": "Littel",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/93674537",
+        "tenantId": null
+      },
+      {
+        "reference": "c036f08a-9350-489e-a95d-519c34b5f826",
+        "email": "Meghan_Halvorson@yahoo.com",
+        "firstName": "Alexis",
+        "lastName": "O'Connell",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/970.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "c4e306ee-f587-447a-af0e-b45d78dae7fa",
+        "email": "Israel_Nolan65@yahoo.com",
+        "firstName": "Pat",
+        "lastName": "Green",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/523.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "e5d1ae97-bf73-4ae5-89fa-608a86eee507",
+        "role_name": "Admin",
+        "permissions": "create",
+        "created_at": "2023-09-17T08:03:16.052Z",
+        "updated_at": "2023-09-16T19:00:05.576Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "1dd20aaa-bb32-4ed7-b719-56741a03221b",
+        "role_name": "Manager",
+        "permissions": "read",
+        "created_at": "2023-09-16T20:50:29.058Z",
+        "updated_at": "2023-09-17T14:45:44.570Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "13354928-0195-4874-903a-6dbcffbfa80c",
+        "role_name": "Supervisor",
+        "permissions": "update",
+        "created_at": "2023-09-16T22:30:38.772Z",
+        "updated_at": "2023-09-17T10:06:33.121Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "c6fe9864-940b-4890-ac25-73ca56894458",
+        "role_name": "Employee",
+        "permissions": "delete",
+        "created_at": "2023-09-16T21:00:45.152Z",
+        "updated_at": "2023-09-17T09:40:25.495Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "424bf1c2-37c1-4059-96fe-02725c149186",
+        "role_name": "Guest",
+        "permissions": "approve",
+        "created_at": "2023-09-17T15:11:42.265Z",
+        "updated_at": "2023-09-17T08:52:35.990Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "663c01ad-4f2d-4c64-9c90-7e0e0ef3e87f",
+        "permission_name": "Access",
+        "description": "Allows access to the system",
+        "created_at": "2023-09-17T05:08:10.978Z",
+        "updated_at": "2023-09-17T03:11:11.838Z",
+        "role_id": "1dd20aaa-bb32-4ed7-b719-56741a03221b"
+      },
+      {
+        "id": "1432e6c6-7845-4d2b-b407-7201ab43371e",
+        "permission_name": "Modify",
+        "description": "Allows modification of data",
+        "created_at": "2023-09-16T18:35:18.319Z",
+        "updated_at": "2023-09-17T09:22:54.860Z",
+        "role_id": "1dd20aaa-bb32-4ed7-b719-56741a03221b"
+      },
+      {
+        "id": "ef39effc-fd1b-4866-815e-3e768f5af158",
+        "permission_name": "Delete",
+        "description": "Allows deletion of records",
+        "created_at": "2023-09-17T03:41:07.025Z",
+        "updated_at": "2023-09-16T18:16:26.983Z",
+        "role_id": "1dd20aaa-bb32-4ed7-b719-56741a03221b"
+      },
+      {
+        "id": "abae78ed-77ae-4bac-81c4-9ac20ac4bc42",
+        "permission_name": "Create",
+        "description": "Allows creation of new items",
+        "created_at": "2023-09-17T10:17:31.766Z",
+        "updated_at": "2023-09-16T19:24:32.483Z",
+        "role_id": "e5d1ae97-bf73-4ae5-89fa-608a86eee507"
+      },
+      {
+        "id": "6131a579-3ec9-43e7-a43f-b5e598dd0ff4",
+        "permission_name": "Approve",
+        "description": "Allows approval of requests",
+        "created_at": "2023-09-17T14:36:19.035Z",
+        "updated_at": "2023-09-17T04:29:40.149Z",
+        "role_id": "13354928-0195-4874-903a-6dbcffbfa80c"
+      }
+    ],
+    "healthcare_staff": [
+      {
+        "id": "89433bcc-481f-4d17-9d67-380e50e7e782",
+        "first_name": "Emily",
+        "last_name": "Johnson",
+        "qualification": "Doctor",
+        "experience": 13810,
+        "status": "Active",
+        "created_at": "2023-09-17T13:25:55.182Z",
+        "updated_at": "2023-09-16T19:40:37.747Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a2b8101c-3b0b-401c-8c68-53232ee87a9d",
+        "first_name": "Daniel",
+        "last_name": "Anderson",
+        "qualification": "Nurse",
+        "experience": 22651,
+        "status": "Inactive",
+        "created_at": "2023-09-17T13:33:41.382Z",
+        "updated_at": "2023-09-17T08:01:42.966Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "3f587434-0a16-4547-8d0d-e9b46039219d",
+        "first_name": "Olivia",
+        "last_name": "Smith",
+        "qualification": "Pharmacist",
+        "experience": 15615,
+        "status": "On Leave",
+        "created_at": "2023-09-17T13:14:48.486Z",
+        "updated_at": "2023-09-17T04:32:52.959Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "d49bd559-6691-4a8d-b956-29fb7b9c57ff",
+        "first_name": "William",
+        "last_name": "Brown",
+        "qualification": "Surgeon",
+        "experience": 46006,
+        "status": "Retired",
+        "created_at": "2023-09-17T06:48:53.642Z",
+        "updated_at": "2023-09-17T06:05:49.113Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b90ec9f6-caa5-4d0a-97b8-698c9e1d39cb",
+        "first_name": "Sophia",
+        "last_name": "Davis",
+        "qualification": "Therapist",
+        "experience": 81445,
+        "status": "Suspended",
+        "created_at": "2023-09-17T13:51:19.157Z",
+        "updated_at": "2023-09-17T04:42:51.908Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "document": [
+      {
+        "id": "46ffecab-01a1-423a-b196-0c597a94682a",
+        "document_name": "Contract",
+        "document_type": "Legal",
+        "upload_date": "2023-09-17T15:06:04.107Z",
+        "created_at": "2023-09-17T08:18:27.758Z",
+        "updated_at": "2023-09-17T03:07:52.232Z",
+        "healthcare_staff_id": "a2b8101c-3b0b-401c-8c68-53232ee87a9d"
+      },
+      {
+        "id": "955ae0f9-ad5f-4270-a737-5c1492df6531",
+        "document_name": "Report",
+        "document_type": "Financial",
+        "upload_date": "2023-09-17T17:28:16.932Z",
+        "created_at": "2023-09-17T11:34:13.843Z",
+        "updated_at": "2023-09-17T04:27:47.798Z",
+        "healthcare_staff_id": "d49bd559-6691-4a8d-b956-29fb7b9c57ff"
+      },
+      {
+        "id": "6295bd5b-176c-417c-b540-a3482e7b2a12",
+        "document_name": "Invoice",
+        "document_type": "Business",
+        "upload_date": "2023-09-17T12:14:31.926Z",
+        "created_at": "2023-09-17T14:50:10.726Z",
+        "updated_at": "2023-09-17T07:02:31.034Z",
+        "healthcare_staff_id": "a2b8101c-3b0b-401c-8c68-53232ee87a9d"
+      },
+      {
+        "id": "2ab87928-b4b1-4bf9-93c5-2c52833b7934",
+        "document_name": "Proposal",
+        "document_type": "Technical",
+        "upload_date": "2023-09-17T10:46:05.874Z",
+        "created_at": "2023-09-17T06:33:41.498Z",
+        "updated_at": "2023-09-17T13:59:13.052Z",
+        "healthcare_staff_id": "89433bcc-481f-4d17-9d67-380e50e7e782"
+      },
+      {
+        "id": "eb1b9a63-b47c-4d47-adf0-73fc3dfdf58a",
+        "document_name": "Agreement",
+        "document_type": "Marketing",
+        "upload_date": "2023-09-17T00:05:23.648Z",
+        "created_at": "2023-09-17T07:37:42.327Z",
+        "updated_at": "2023-09-17T13:24:57.569Z",
+        "healthcare_staff_id": "b90ec9f6-caa5-4d0a-97b8-698c9e1d39cb"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "c94b89a0-23d2-4fa9-81e2-80695f5a87a2",
+        "email": "Angus65@gmail.com",
+        "firstName": "Camryn",
+        "lastName": "Erdman",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/697.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "2fb1ff05-7a20-42f5-aca1-ee755c15e368",
+        "email": "Royal.Nicolas@yahoo.com",
+        "firstName": "Nat",
+        "lastName": "Kunze",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/86881610",
+        "tenantId": null
+      },
+      {
+        "reference": "a8b8ceee-0a81-46df-a883-509627dca9b1",
+        "email": "Reanna38@yahoo.com",
+        "firstName": "Edgar",
+        "lastName": "Mertz-Schmidt",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/54.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "5ae121d7-a110-46f2-b353-7567bc031c16",
+        "email": "Raphael26@yahoo.com",
+        "firstName": "Rhiannon",
+        "lastName": "Wisoky",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/662.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "cd748ac2-c0e8-4867-bec5-9011246c1026",
+        "email": "Elyse.Labadie@yahoo.com",
+        "firstName": "Ressie",
+        "lastName": "Boyle",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/12.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "e7118f70-fd6a-4738-a3d5-0ba69f12908e",
+        "role_name": "Admin",
+        "permissions": "create",
+        "created_at": "2023-09-16T22:58:01.305Z",
+        "updated_at": "2023-09-17T13:52:56.416Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "fa5c5c6a-9a6e-49f1-92a1-68075a28871f",
+        "role_name": "Manager",
+        "permissions": "read",
+        "created_at": "2023-09-17T14:46:05.392Z",
+        "updated_at": "2023-09-17T12:57:36.960Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "a6383983-c58d-4fc9-b32a-6583b8eb506b",
+        "role_name": "Employee",
+        "permissions": "update",
+        "created_at": "2023-09-16T18:25:52.471Z",
+        "updated_at": "2023-09-17T07:59:30.286Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "30953895-dc7d-4fcf-b5dc-bd578cbef17e",
+        "role_name": "Supervisor",
+        "permissions": "delete",
+        "created_at": "2023-09-17T08:41:00.317Z",
+        "updated_at": "2023-09-17T00:42:21.164Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "2d400672-fbce-484c-a077-3a5aec9a7e22",
+        "role_name": "Analyst",
+        "permissions": "approve",
+        "created_at": "2023-09-17T05:30:03.122Z",
+        "updated_at": "2023-09-17T02:58:33.414Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "abea92cd-f7b3-4c7b-b043-0d5dc6ee6989",
+        "permission_name": "Access",
+        "description": "Allows access to the system",
+        "created_at": "2023-09-16T18:22:03.022Z",
+        "updated_at": "2023-09-17T00:10:11.050Z",
+        "role_id": "30953895-dc7d-4fcf-b5dc-bd578cbef17e"
+      },
+      {
+        "id": "600f66ab-01fa-4656-a263-dfee14ffc0d5",
+        "permission_name": "Edit",
+        "description": "Enables editing of records",
+        "created_at": "2023-09-17T06:36:23.243Z",
+        "updated_at": "2023-09-17T00:49:18.782Z",
+        "role_id": "2d400672-fbce-484c-a077-3a5aec9a7e22"
+      },
+      {
+        "id": "2bb3e29f-e0f6-4d6f-9b66-17f2d1c2e4a3",
+        "permission_name": "Delete",
+        "description": "Permits deletion of data",
+        "created_at": "2023-09-17T11:51:40.758Z",
+        "updated_at": "2023-09-17T01:56:27.942Z",
+        "role_id": "e7118f70-fd6a-4738-a3d5-0ba69f12908e"
+      },
+      {
+        "id": "cb80757a-7470-45f8-830a-dc4fd9af92fa",
+        "permission_name": "View",
+        "description": "Allows viewing of information",
+        "created_at": "2023-09-16T19:27:13.429Z",
+        "updated_at": "2023-09-16T17:33:36.992Z",
+        "role_id": "e7118f70-fd6a-4738-a3d5-0ba69f12908e"
+      },
+      {
+        "id": "8900f854-d331-4be9-9281-001cb1fad5af",
+        "permission_name": "Manage",
+        "description": "Enables management of resources",
+        "created_at": "2023-09-17T09:44:57.297Z",
+        "updated_at": "2023-09-16T19:43:55.883Z",
+        "role_id": "e7118f70-fd6a-4738-a3d5-0ba69f12908e"
+      }
+    ],
+    "healthcare_staff": [
+      {
+        "id": "c249c5c5-7ba0-49be-9ceb-2658671ae01c",
+        "first_name": "Emily",
+        "last_name": "Johnson",
+        "qualification": "Registered Nurse",
+        "experience": 72110,
+        "status": "Active",
+        "created_at": "2023-09-16T23:13:21.802Z",
+        "updated_at": "2023-09-16T22:14:31.767Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "e12d3806-2c4f-4750-a10f-1ab7f424ab95",
+        "first_name": "Daniel",
+        "last_name": "Smith",
+        "qualification": "Medical Doctor",
+        "experience": 69205,
+        "status": "Inactive",
+        "created_at": "2023-09-17T17:00:10.604Z",
+        "updated_at": "2023-09-17T11:03:51.777Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "b90e63aa-96cd-44fc-a3f9-8b2f64cf13a4",
+        "first_name": "Olivia",
+        "last_name": "Williams",
+        "qualification": "Pharmacist",
+        "experience": 74039,
+        "status": "On Leave",
+        "created_at": "2023-09-16T23:40:43.985Z",
+        "updated_at": "2023-09-16T17:50:29.124Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "46826bea-8416-45d7-ad43-23e94a57fe19",
+        "first_name": "James",
+        "last_name": "Brown",
+        "qualification": "Physiotherapist",
+        "experience": 12448,
+        "status": "Retired",
+        "created_at": "2023-09-17T10:17:40.075Z",
+        "updated_at": "2023-09-17T06:05:41.353Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "d1e52692-cd4f-4117-8153-6a6e222b8c21",
+        "first_name": "Sophia",
+        "last_name": "Jones",
+        "qualification": "Dentist",
+        "experience": 7930,
+        "status": "Suspended",
+        "created_at": "2023-09-16T23:55:20.293Z",
+        "updated_at": "2023-09-17T17:23:31.633Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "document": [
+      {
+        "id": "ecdd9c67-929b-4a6a-ab4a-713546afd5a3",
+        "document_name": "Contract",
+        "document_type": "Legal",
+        "upload_date": "2023-09-16T19:52:27.676Z",
+        "created_at": "2023-09-17T01:22:22.952Z",
+        "updated_at": "2023-09-17T17:06:07.849Z",
+        "healthcare_staff_id": "46826bea-8416-45d7-ad43-23e94a57fe19"
+      },
+      {
+        "id": "b4981ebf-2ca7-492e-b289-f0ce5f03794b",
+        "document_name": "Invoice",
+        "document_type": "Financial",
+        "upload_date": "2023-09-17T13:01:10.986Z",
+        "created_at": "2023-09-17T15:53:04.508Z",
+        "updated_at": "2023-09-17T14:47:11.061Z",
+        "healthcare_staff_id": "46826bea-8416-45d7-ad43-23e94a57fe19"
+      },
+      {
+        "id": "e4ab4a73-f761-4de4-84fe-b45e4ee80631",
+        "document_name": "Report",
+        "document_type": "Technical",
+        "upload_date": "2023-09-17T06:50:25.411Z",
+        "created_at": "2023-09-17T03:35:05.027Z",
+        "updated_at": "2023-09-17T09:29:24.333Z",
+        "healthcare_staff_id": "b90e63aa-96cd-44fc-a3f9-8b2f64cf13a4"
+      },
+      {
+        "id": "9e3b090e-f702-419d-9901-5c80ea71bfa5",
+        "document_name": "Proposal",
+        "document_type": "Business",
+        "upload_date": "2023-09-16T18:36:29.988Z",
+        "created_at": "2023-09-17T14:34:58.042Z",
+        "updated_at": "2023-09-16T19:57:13.576Z",
+        "healthcare_staff_id": "46826bea-8416-45d7-ad43-23e94a57fe19"
+      },
+      {
+        "id": "8c5c5187-cf46-4407-981a-739d9b1b768b",
+        "document_name": "Agreement",
+        "document_type": "Operational",
+        "upload_date": "2023-09-16T21:54:20.913Z",
+        "created_at": "2023-09-17T10:01:03.751Z",
+        "updated_at": "2023-09-17T02:51:31.821Z",
+        "healthcare_staff_id": "e12d3806-2c4f-4750-a10f-1ab7f424ab95"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "c2e691a6-c61f-4531-a1d1-e649efab5d8a",
+        "email": "Isac_Harvey35@yahoo.com",
+        "firstName": "Dianna",
+        "lastName": "Huels",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/29035160",
+        "tenantId": null
+      },
+      {
+        "reference": "18bded79-70e1-4bed-b1f2-2657b67f5eb2",
+        "email": "Bria.Lebsack46@yahoo.com",
+        "firstName": "Lou",
+        "lastName": "West",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/828.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "9ba72d17-351e-4084-93b9-f13d3775df7d",
+        "email": "Lionel.Hessel48@yahoo.com",
+        "firstName": "Erling",
+        "lastName": "Glover",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1141.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "a0347c54-49d2-43d2-8682-0da8132f80c7",
+        "email": "Isobel_Okuneva@yahoo.com",
+        "firstName": "Winston",
+        "lastName": "Huel",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/82079817",
+        "tenantId": null
+      },
+      {
+        "reference": "2a23df15-482e-4498-9099-7ec9566f81cd",
+        "email": "Raymond_Ratke@hotmail.com",
+        "firstName": "Geoffrey",
+        "lastName": "Hammes",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/56393621",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "4b03b232-d1c3-4910-8590-36de7872cd54",
+        "role_name": "Admin",
+        "permissions": "create",
+        "created_at": "2023-09-16T23:59:42.636Z",
+        "updated_at": "2023-09-17T01:11:38.020Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "8b1351b7-7af7-4988-9c27-a4094337f127",
+        "role_name": "Manager",
+        "permissions": "read",
+        "created_at": "2023-09-16T18:12:28.129Z",
+        "updated_at": "2023-09-17T09:34:36.720Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "9824e061-33e9-4768-8da2-5472ada855b3",
+        "role_name": "Employee",
+        "permissions": "update",
+        "created_at": "2023-09-16T20:26:47.539Z",
+        "updated_at": "2023-09-17T05:28:06.207Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "9a15c30b-2974-4a7b-917d-cbb35e19fc74",
+        "role_name": "Supervisor",
+        "permissions": "delete",
+        "created_at": "2023-09-17T03:57:49.213Z",
+        "updated_at": "2023-09-17T16:26:01.147Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "37ca4dc6-8f90-4162-af3f-f909745c01cc",
+        "role_name": "Analyst",
+        "permissions": "approve",
+        "created_at": "2023-09-16T19:47:08.166Z",
+        "updated_at": "2023-09-16T23:06:07.689Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "7df7fdd6-6202-4bb7-ac14-f0af20047f8a",
+        "permission_name": "Access",
+        "description": "Allows access to the system",
+        "created_at": "2023-09-17T16:27:21.587Z",
+        "updated_at": "2023-09-16T23:03:37.473Z",
+        "role_id": "9824e061-33e9-4768-8da2-5472ada855b3"
+      },
+      {
+        "id": "5af44951-bc8e-4e5f-97f2-b43e4ae2c527",
+        "permission_name": "Modify",
+        "description": "Allows modification of data",
+        "created_at": "2023-09-17T13:25:28.071Z",
+        "updated_at": "2023-09-17T04:40:18.200Z",
+        "role_id": "9824e061-33e9-4768-8da2-5472ada855b3"
+      },
+      {
+        "id": "d06a0d56-412f-4fe3-97ca-00915cc30f01",
+        "permission_name": "Delete",
+        "description": "Allows deletion of records",
+        "created_at": "2023-09-17T10:24:53.407Z",
+        "updated_at": "2023-09-17T15:10:42.702Z",
+        "role_id": "4b03b232-d1c3-4910-8590-36de7872cd54"
+      },
+      {
+        "id": "93b3c8e8-a1c9-4a90-8d86-44ac26fe8e8a",
+        "permission_name": "Create",
+        "description": "Allows creation of new records",
+        "created_at": "2023-09-17T01:38:46.196Z",
+        "updated_at": "2023-09-17T00:34:34.031Z",
+        "role_id": "37ca4dc6-8f90-4162-af3f-f909745c01cc"
+      },
+      {
+        "id": "1693285f-6347-4bf7-a282-dca0a6ff79a1",
+        "permission_name": "Approve",
+        "description": "Allows approval of requests",
+        "created_at": "2023-09-17T16:26:36.610Z",
+        "updated_at": "2023-09-17T00:05:32.163Z",
+        "role_id": "9824e061-33e9-4768-8da2-5472ada855b3"
+      }
+    ],
+    "healthcare_staff": [
+      {
+        "id": "2beb332a-fb2d-46db-89d4-8fef15bb4c71",
+        "first_name": "Emily",
+        "last_name": "Johnson",
+        "qualification": "Registered Nurse",
+        "experience": 62242,
+        "status": "Active",
+        "created_at": "2023-09-17T01:20:05.548Z",
+        "updated_at": "2023-09-17T00:41:20.550Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "6fbb2b01-cf67-4483-8afc-e8e060298ad6",
+        "first_name": "Daniel",
+        "last_name": "Anderson",
+        "qualification": "Medical Doctor",
+        "experience": 86574,
+        "status": "Inactive",
+        "created_at": "2023-09-16T20:15:41.760Z",
+        "updated_at": "2023-09-17T16:22:17.917Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "bdc8f70a-16b9-422e-b13f-3f2a1080be2a",
+        "first_name": "Olivia",
+        "last_name": "Thomas",
+        "qualification": "Pharmacist",
+        "experience": 3289,
+        "status": "On Leave",
+        "created_at": "2023-09-17T07:58:56.697Z",
+        "updated_at": "2023-09-17T13:52:51.574Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "6f53283c-906b-4941-a810-c92f74015374",
+        "first_name": "William",
+        "last_name": "Jackson",
+        "qualification": "Physiotherapist",
+        "experience": 31597,
+        "status": "Retired",
+        "created_at": "2023-09-17T01:25:46.970Z",
+        "updated_at": "2023-09-17T09:38:01.329Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "0f037bba-a877-4eb5-8e65-2e8be602a79c",
+        "first_name": "Sophia",
+        "last_name": "Brown",
+        "qualification": "Dentist",
+        "experience": 8481,
+        "status": "Suspended",
+        "created_at": "2023-09-17T09:58:40.241Z",
+        "updated_at": "2023-09-17T07:22:18.609Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "document": [
+      {
+        "id": "e0b6b80b-3318-4dc6-8292-876dff314662",
+        "document_name": "Contract",
+        "document_type": "Legal",
+        "upload_date": "2023-09-17T12:24:05.121Z",
+        "created_at": "2023-09-17T15:48:00.395Z",
+        "updated_at": "2023-09-17T07:51:29.486Z",
+        "healthcare_staff_id": "0f037bba-a877-4eb5-8e65-2e8be602a79c"
+      },
+      {
+        "id": "e8519a66-f58c-49eb-9e07-436926971bac",
+        "document_name": "Report",
+        "document_type": "Financial",
+        "upload_date": "2023-09-17T08:04:51.088Z",
+        "created_at": "2023-09-17T12:22:46.559Z",
+        "updated_at": "2023-09-16T22:37:33.233Z",
+        "healthcare_staff_id": "0f037bba-a877-4eb5-8e65-2e8be602a79c"
+      },
+      {
+        "id": "a1d5f12d-a136-423f-8915-9ad446768fca",
+        "document_name": "Invoice",
+        "document_type": "Business",
+        "upload_date": "2023-09-17T09:55:29.607Z",
+        "created_at": "2023-09-17T13:35:24.082Z",
+        "updated_at": "2023-09-16T23:57:49.328Z",
+        "healthcare_staff_id": "6fbb2b01-cf67-4483-8afc-e8e060298ad6"
+      },
+      {
+        "id": "ecffc6ce-3ab4-465d-a50b-74e35b32fa08",
+        "document_name": "Proposal",
+        "document_type": "Technical",
+        "upload_date": "2023-09-17T06:10:15.521Z",
+        "created_at": "2023-09-17T05:24:06.846Z",
+        "updated_at": "2023-09-16T23:38:30.630Z",
+        "healthcare_staff_id": "0f037bba-a877-4eb5-8e65-2e8be602a79c"
+      },
+      {
+        "id": "df896b3d-df5b-4121-a78e-5689e5e5086a",
+        "document_name": "Agreement",
+        "document_type": "Administrative",
+        "upload_date": "2023-09-17T14:41:20.715Z",
+        "created_at": "2023-09-17T02:00:39.460Z",
+        "updated_at": "2023-09-16T23:54:05.636Z",
+        "healthcare_staff_id": "6fbb2b01-cf67-4483-8afc-e8e060298ad6"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "70b4997b-bdbb-4188-857a-668c38f6aaef",
+        "email": "Alice_Nader2@gmail.com",
+        "firstName": "Pinkie",
+        "lastName": "Block",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/950.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "c505a3af-b59c-4dcf-a2d5-a1305425e53d",
+        "email": "Paul_Towne12@hotmail.com",
+        "firstName": "Carole",
+        "lastName": "Conn",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/818.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "bf10b154-1a02-4f84-9f86-3acc68eb20ba",
+        "email": "Winnifred.Blanda56@gmail.com",
+        "firstName": "Frankie",
+        "lastName": "Lehner-Wunsch",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1001.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "36a316b0-30c3-4f5a-a869-554cf24d5800",
+        "email": "Chester_Lind52@hotmail.com",
+        "firstName": "Andrew",
+        "lastName": "Padberg",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/97838008",
+        "tenantId": null
+      },
+      {
+        "reference": "ecc9a194-3f67-4882-af60-b3658a2813b6",
+        "email": "Gwendolyn.Mills@yahoo.com",
+        "firstName": "Madison",
+        "lastName": "Greenholt",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/495.jpg",
+        "tenantId": null
+      }
+    ]
+  },
+  {
+    "role": [
+      {
+        "id": "2b053eb6-5980-4e32-80f4-5eb30cd9f456",
+        "role_name": "Admin",
+        "permissions": "create",
+        "created_at": "2023-09-17T01:28:41.889Z",
+        "updated_at": "2023-09-17T01:02:54.263Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "bbf4a20f-ac93-4bc5-94f1-dc623f749142",
+        "role_name": "Manager",
+        "permissions": "read",
+        "created_at": "2023-09-16T19:46:42.318Z",
+        "updated_at": "2023-09-17T05:35:49.826Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "d9b26369-d7fc-4d4d-8de7-122c2bd4b4b9",
+        "role_name": "Supervisor",
+        "permissions": "update",
+        "created_at": "2023-09-17T11:18:24.040Z",
+        "updated_at": "2023-09-17T01:23:57.591Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "4746b334-97f2-4eae-be6b-d0ff3b0c3163",
+        "role_name": "Employee",
+        "permissions": "delete",
+        "created_at": "2023-09-17T00:26:14.311Z",
+        "updated_at": "2023-09-17T01:58:05.780Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "f8646c26-8407-431e-b230-54ccce34535c",
+        "role_name": "Guest",
+        "permissions": "approve",
+        "created_at": "2023-09-17T03:30:44.294Z",
+        "updated_at": "2023-09-16T17:50:19.555Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "permission": [
+      {
+        "id": "a032bf7e-461b-46e3-9fa5-af7685fa63ec",
+        "permission_name": "Access",
+        "description": "Allows access to the system",
+        "created_at": "2023-09-16T18:34:01.809Z",
+        "updated_at": "2023-09-17T05:52:09.923Z",
+        "role_id": "4746b334-97f2-4eae-be6b-d0ff3b0c3163"
+      },
+      {
+        "id": "c544c6ca-2aa3-4195-9c84-caccf77e208a",
+        "permission_name": "Modify",
+        "description": "Allows modification of data",
+        "created_at": "2023-09-17T13:13:30.527Z",
+        "updated_at": "2023-09-16T18:10:43.425Z",
+        "role_id": "2b053eb6-5980-4e32-80f4-5eb30cd9f456"
+      },
+      {
+        "id": "a1926493-23f4-42e2-bd52-062535399304",
+        "permission_name": "View",
+        "description": "Allows viewing of information",
+        "created_at": "2023-09-17T08:06:14.810Z",
+        "updated_at": "2023-09-17T02:42:40.590Z",
+        "role_id": "bbf4a20f-ac93-4bc5-94f1-dc623f749142"
+      },
+      {
+        "id": "59329f8d-8aea-45b5-8930-c62a40749649",
+        "permission_name": "Manage",
+        "description": "Allows management of resources",
+        "created_at": "2023-09-16T19:43:27.557Z",
+        "updated_at": "2023-09-17T01:19:29.520Z",
+        "role_id": "f8646c26-8407-431e-b230-54ccce34535c"
+      },
+      {
+        "id": "7ae880d7-322d-49a2-83df-de8cca50e85f",
+        "permission_name": "Control",
+        "description": "Allows control over system settings",
+        "created_at": "2023-09-17T10:19:48.098Z",
+        "updated_at": "2023-09-16T20:57:09.141Z",
+        "role_id": "2b053eb6-5980-4e32-80f4-5eb30cd9f456"
+      }
+    ],
+    "healthcare_staff": [
+      {
+        "id": "2d0e5e48-635e-4af3-922d-d74711d8b91a",
+        "first_name": "Emily",
+        "last_name": "Johnson",
+        "qualification": "Registered Nurse",
+        "experience": 66686,
+        "status": "Active",
+        "created_at": "2023-09-16T19:54:19.394Z",
+        "updated_at": "2023-09-17T15:56:37.638Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "7d313849-c892-4591-8aae-5e03de8e8092",
+        "first_name": "Daniel",
+        "last_name": "Brown",
+        "qualification": "Surgeon",
+        "experience": 88828,
+        "status": "Inactive",
+        "created_at": "2023-09-17T03:42:44.885Z",
+        "updated_at": "2023-09-16T19:11:58.343Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "9d6e56eb-a08f-4d2b-9e8a-b072f18a7fb2",
+        "first_name": "Olivia",
+        "last_name": "Miller",
+        "qualification": "Physician Assistant",
+        "experience": 898,
+        "status": "On Leave",
+        "created_at": "2023-09-16T21:45:41.848Z",
+        "updated_at": "2023-09-17T01:46:41.587Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "0bad42fc-2f17-47ce-b6c1-c0d1c011e53a",
+        "first_name": "James",
+        "last_name": "Davis",
+        "qualification": "Pharmacist",
+        "experience": 90500,
+        "status": "Retired",
+        "created_at": "2023-09-17T04:14:23.646Z",
+        "updated_at": "2023-09-17T00:54:41.603Z",
+        "user_id": "user_entity_pk"
+      },
+      {
+        "id": "3a346248-ada1-4fd4-bd12-8f04138c08f8",
+        "first_name": "Sophia",
+        "last_name": "Wilson",
+        "qualification": "Medical Technologist",
+        "experience": 95857,
+        "status": "Suspended",
+        "created_at": "2023-09-17T00:09:20.244Z",
+        "updated_at": "2023-09-17T15:30:16.669Z",
+        "user_id": "user_entity_pk"
+      }
+    ],
+    "document": [
+      {
+        "id": "5cd9352d-0d09-443e-b385-d9fead08cb0b",
+        "document_name": "Contract",
+        "document_type": "Legal",
+        "upload_date": "2023-09-16T19:23:00.448Z",
+        "created_at": "2023-09-17T07:56:16.579Z",
+        "updated_at": "2023-09-17T13:02:49.081Z",
+        "healthcare_staff_id": "2d0e5e48-635e-4af3-922d-d74711d8b91a"
+      },
+      {
+        "id": "0338ea7c-5ffe-4b1b-a576-4601c2b10733",
+        "document_name": "Invoice",
+        "document_type": "Financial",
+        "upload_date": "2023-09-16T20:25:40.837Z",
+        "created_at": "2023-09-17T07:16:42.850Z",
+        "updated_at": "2023-09-17T09:16:12.248Z",
+        "healthcare_staff_id": "9d6e56eb-a08f-4d2b-9e8a-b072f18a7fb2"
+      },
+      {
+        "id": "5ddf3af7-7c80-42d4-b328-16c569e14b35",
+        "document_name": "Report",
+        "document_type": "Technical",
+        "upload_date": "2023-09-17T10:10:48.703Z",
+        "created_at": "2023-09-17T05:27:31.895Z",
+        "updated_at": "2023-09-17T15:25:03.126Z",
+        "healthcare_staff_id": "2d0e5e48-635e-4af3-922d-d74711d8b91a"
+      },
+      {
+        "id": "35dc56be-73c0-4b15-b44a-8e0fa0ef7399",
+        "document_name": "Proposal",
+        "document_type": "Business",
+        "upload_date": "2023-09-17T10:42:48.409Z",
+        "created_at": "2023-09-17T14:30:31.607Z",
+        "updated_at": "2023-09-17T06:43:51.817Z",
+        "healthcare_staff_id": "2d0e5e48-635e-4af3-922d-d74711d8b91a"
+      },
+      {
+        "id": "e2683204-378f-4435-8e4d-e8bb548cc13a",
+        "document_name": "Agreement",
+        "document_type": "Confidential",
+        "upload_date": "2023-09-17T10:14:49.955Z",
+        "created_at": "2023-09-16T17:46:28.406Z",
+        "updated_at": "2023-09-17T06:23:25.769Z",
+        "healthcare_staff_id": "7d313849-c892-4591-8aae-5e03de8e8092"
+      }
+    ],
+    "roqUser": [
+      {
+        "reference": "95c7bf81-cac2-40ad-81f0-175b1fcda946",
+        "email": "Rosella_Lubowitz1@yahoo.com",
+        "firstName": "Lavinia",
+        "lastName": "Schmitt",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/980.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "6da5b004-a7c4-4ca1-bb47-4b07eac6dd0c",
+        "email": "Abigale20@yahoo.com",
+        "firstName": "Addie",
+        "lastName": "Haley",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/27171158",
+        "tenantId": null
+      },
+      {
+        "reference": "ec210d05-d9b6-416d-a4ed-10997ed88ca2",
+        "email": "Brielle_Windler@hotmail.com",
+        "firstName": "Korey",
+        "lastName": "Muller",
+        "active": true,
+        "avatarUrl": "https://avatars.githubusercontent.com/u/16741532",
+        "tenantId": null
+      },
+      {
+        "reference": "f02c3f92-c541-44fa-ac12-f196667e69dc",
+        "email": "Maia.Grimes66@hotmail.com",
+        "firstName": "Mathilde",
+        "lastName": "Goldner",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/428.jpg",
+        "tenantId": null
+      },
+      {
+        "reference": "38b75733-55cb-42c6-8d1a-50a23df18f3f",
+        "email": "Kathleen37@yahoo.com",
+        "firstName": "Wendy",
+        "lastName": "Parisian",
+        "active": true,
+        "avatarUrl": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/407.jpg",
+        "tenantId": null
+      }
+    ]
+  }
+]

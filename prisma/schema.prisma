@@ -1,0 +1,81 @@
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["clientExtensions", "postgresqlExtensions"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  extensions      = [pgcrypto]
+}
+
+model document {
+  id                  String           @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  document_name       String           @db.VarChar(255)
+  document_type       String           @db.VarChar(255)
+  upload_date         DateTime         @default(now()) @db.Timestamp(6)
+  healthcare_staff_id String           @db.Uuid
+  created_at          DateTime         @default(now()) @db.Timestamp(6)
+  updated_at          DateTime         @default(now()) @db.Timestamp(6)
+  healthcare_staff    healthcare_staff @relation(fields: [healthcare_staff_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model healthcare_staff {
+  id            String     @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  first_name    String     @db.VarChar(255)
+  last_name     String     @db.VarChar(255)
+  qualification String     @db.VarChar(255)
+  experience    Int
+  status        String     @db.VarChar(255)
+  user_id       String     @db.Uuid
+  created_at    DateTime   @default(now()) @db.Timestamp(6)
+  updated_at    DateTime   @default(now()) @db.Timestamp(6)
+  document      document[]
+  user          user       @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model organization {
+  id          String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  description String?  @db.VarChar(255)
+  name        String   @db.VarChar(255)
+  created_at  DateTime @default(now()) @db.Timestamp(6)
+  updated_at  DateTime @default(now()) @db.Timestamp(6)
+  user_id     String   @db.Uuid
+  tenant_id   String   @db.VarChar(255)
+  user        user     @relation(fields: [user_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model permission {
+  id              String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  permission_name String   @db.VarChar(255)
+  description     String?  @db.VarChar(255)
+  role_id         String   @db.Uuid
+  created_at      DateTime @default(now()) @db.Timestamp(6)
+  updated_at      DateTime @default(now()) @db.Timestamp(6)
+  role            role     @relation(fields: [role_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model role {
+  id          String       @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  role_name   String       @db.VarChar(255)
+  permissions String       @db.VarChar(255)
+  user_id     String       @db.Uuid
+  created_at  DateTime     @default(now()) @db.Timestamp(6)
+  updated_at  DateTime     @default(now()) @db.Timestamp(6)
+  permission  permission[]
+  user        user         @relation(fields: [user_id], references: [id], onDelete: Cascade, onUpdate: NoAction)
+}
+
+model user {
+  id               String             @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
+  email            String             @unique @db.VarChar(255)
+  firstName        String?            @db.VarChar(255)
+  lastName         String?            @db.VarChar(255)
+  roq_user_id      String             @db.VarChar(255)
+  tenant_id        String             @db.VarChar(255)
+  created_at       DateTime           @default(now()) @db.Timestamp(6)
+  updated_at       DateTime           @default(now()) @db.Timestamp(6)
+  healthcare_staff healthcare_staff[]
+  organization     organization[]
+  role             role[]
+}
